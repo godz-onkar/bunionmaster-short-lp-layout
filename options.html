@@ -28,15 +28,15 @@ h2{font-family:Figtree;font-weight:700;font-size:clamp(30px,3.6vw,44px);line-hei
 ul{list-style:none;margin:0;padding:0}
 
 /* A: two cards */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1000px;margin:0 auto;align-items:stretch}
-.cardT,.cardP{border-radius:22px;padding:30px 30px 32px}
-.cardT{background:var(--beige);color:var(--tradtext)}
-.cardP{background:var(--charcoal);color:var(--ivory);box-shadow:var(--shadow)}
-.cardT h3,.cardP h3{font-family:Figtree;font-size:21px;margin:0 0 18px;line-height:1.25}
-.cardT h3{color:var(--charcoal);font-weight:600}
-.cardP h3{color:var(--gold)}
-.two li{display:flex;gap:10px;padding:12px 0;border-top:1px solid rgba(23,23,23,.1);font-size:17px}
-.cardP li{border-top-color:rgba(255,255,255,.1);font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1.18fr;gap:24px;max-width:1040px;margin:0 auto;align-items:center}
+.cardT,.cardP{border-radius:22px}
+.cardT{background:var(--beige);color:var(--tradtext);border:2px solid #D64545;padding:26px 26px 28px}
+.cardP{background:var(--charcoal);color:var(--ivory);border:2px solid #3DAA6B;padding:38px 36px 40px;box-shadow:var(--shadow)}
+.cardT h3,.cardP h3{font-family:Figtree;margin:0 0 16px;line-height:1.25}
+.cardT h3{color:var(--charcoal);font-weight:600;font-size:19px}
+.cardP h3{color:var(--gold);font-size:24px}
+.two li{display:flex;gap:10px;padding:11px 0;border-top:1px solid rgba(23,23,23,.1);font-size:16px}
+.cardP li{border-top-color:rgba(255,255,255,.1);font-weight:600;font-size:19px;padding:13px 0}
 .two li:first-child{border-top:0;padding-top:0}
 
 /* B: step by step */
@@ -62,9 +62,13 @@ ul{list-style:none;margin:0;padding:0}
   .wrap{width:min(1160px,100% - 32px)}
   .sec{padding:48px 16px;border-radius:12px}
   h2{font-size:28px}.intro p{font-size:18px}.intro{margin-bottom:28px}
-  .two{grid-template-columns:1fr;gap:14px}
-  .cardT,.cardP{padding:22px 20px}
-  .two li{font-size:16px}
+  .two{grid-template-columns:1fr;gap:16px}
+  .cardT{padding:20px 18px}
+  .cardT h3{font-size:17px;margin-bottom:10px}
+  .two li{font-size:15px;padding:8px 0}
+  .cardP{padding:26px 22px 28px}
+  .cardP h3{font-size:21px}
+  .cardP li{font-size:17px;padding:11px 0}
   .steps{grid-template-columns:1fr;gap:0}
   .step{display:grid;grid-template-columns:34px 1fr;column-gap:14px;border:0;box-shadow:none;border-radius:0;padding:0 0 22px;position:relative;background:transparent}
   .step::before{content:"";position:absolute;left:16px;top:34px;bottom:0;width:2px;background:var(--border)}
@@ -94,7 +98,7 @@ ul{list-style:none;margin:0;padding:0}
   <!-- A -->
   <div class="opt">
     <p class="optlab"><span>Option A</span> · Two cards, side by side</p>
-    <p class="why">Drops the stage-label column. Two simple lists: the muted card is what people expect, the dark card is Dr. Tagge. On a phone they stack, traditional first.</p>
+    <p class="why">Chosen. Two simple lists: red border on what people expect, green border on Dr. Tagge's card, which is larger. On a phone they stack, traditional first and tighter, Dr. Tagge's card below it at full size.</p>
     <div class="sec"><div class="wrap" style="width:auto;padding:0 40px">
       <div class="intro"><h2>Dr. Tagge plans a different recovery from the one you've heard about.</h2><p>Most people aren't afraid of bunion surgery itself. They're afraid of the recovery.</p></div>
       <div class="two">

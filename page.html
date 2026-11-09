@@ -82,8 +82,19 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;min-h
 .cmp .p{font-weight:600}
 .cmp .p .chk{margin-top:1px}
 .cmp .t .dot{margin-top:9px}
-.legend,.cards{display:none}
-.note{max-width:1000px;margin:14px auto 0;font-size:14px;color:#555}
+.two{display:grid;grid-template-columns:1fr 1.18fr;gap:24px;max-width:1040px;margin:0 auto;align-items:center}
+.two ul{list-style:none;margin:0;padding:0}
+.cardT,.cardP{border-radius:22px}
+.cardT{background:var(--beige);color:var(--tradtext);border:2px solid #D64545;padding:26px 26px 28px}
+.cardP{background:var(--charcoal);color:var(--ivory);border:2px solid #3DAA6B;padding:38px 36px 40px;box-shadow:var(--shadow)}
+.cardT h3,.cardP h3{margin:0 0 16px;line-height:1.25}
+.cardT h3{color:var(--charcoal);font-weight:600;font-size:19px}
+.cardP h3{color:var(--gold);font-size:24px}
+.two li{display:flex;gap:10px;padding:11px 0;border-top:1px solid rgba(23,23,23,.1);font-size:16px;line-height:1.45}
+.cardP li{border-top-color:rgba(255,255,255,.1);font-weight:600;font-size:19px;padding:13px 0}
+.two li:first-child{border-top:0;padding-top:0}
+.two .dot{margin:8px 7px 0}
+.note{max-width:1000px;margin:18px auto 0;font-size:14px;color:#555;text-align:center}
 
 /* PRISM graphic */
 .prism{max-width:860px;margin:64px auto 0}
@@ -174,18 +185,13 @@ footer a{color:inherit}
   .btn{width:100%}
   .cta-block{align-items:stretch}
   .cta-block .call{text-align:center}
-  .cmp{display:none}
-  .legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;margin-bottom:16px;justify-content:center}
-  .legend span{display:flex;align-items:center;gap:2px}
-  .legend .dot{margin:0 4px 0 0}
-  .legend .chk{margin:0}
-  .cards{display:grid;gap:12px}
-  .card{border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--white)}
-  .card .eyebrow{color:var(--goldtan);margin-bottom:8px}
-  .card .ln{display:flex;gap:6px;font-size:15px;white-space:nowrap}
-  .card .ln.t{color:var(--tradtext)}
-  .card .ln.p{font-weight:600;margin-top:6px}
-  .card .ln .dot{margin:8px 7px 0}
+  .two{grid-template-columns:1fr;gap:16px}
+  .cardT{padding:20px 18px}
+  .cardT h3{font-size:17px;margin-bottom:10px}
+  .two li{font-size:15px;padding:8px 0}
+  .cardP{padding:26px 22px 28px}
+  .cardP h3{font-size:21px}
+  .cardP li{font-size:17px;padding:11px 0}
   .intro{margin-bottom:32px} .intro p{font-size:18px}
   .note{text-align:center}
   .prism{margin-top:48px}
@@ -259,39 +265,19 @@ footer a{color:inherit}
       <p>Most people aren't afraid of bunion surgery itself. They're afraid of the recovery.</p>
     </div>
 
-    <div class="cmp" role="table">
-      <div class="hd"></div>
-      <div class="hd t">Traditional surgery often means</div>
-      <div class="hd p">With Dr. Tagge and PRISM</div>
-
-      <div class="lab">Before surgery</div>
-      <div class="t"><span class="dot"></span>Recovery dealt with after surgery</div>
-      <div class="p"><svg class="chk"><use href="#chkd"/></svg>Recovery planned before surgery day</div>
-
-      <div class="lab">During surgery</div>
-      <div class="t"><span class="dot"></span>A larger incision to reach the bone</div>
-      <div class="p"><svg class="chk"><use href="#chkd"/></svg>Small incisions, under local anesthesia</div>
-
-      <div class="lab">Left in the foot</div>
-      <div class="t"><span class="dot"></span>Screws or plates to hold the correction</div>
-      <div class="p"><svg class="chk"><use href="#chkd"/></svg>No screws or plates</div>
-
-      <div class="lab">Leaving surgery</div>
-      <div class="t"><span class="dot"></span>Crutches or a knee scooter to get around</div>
-      <div class="p"><svg class="chk"><use href="#chkd"/></svg>Walk out the same day in a sandal</div>
-
-      <div class="lab">The weeks after</div>
-      <div class="t"><span class="dot"></span>Weeks in a protective boot, on crutches</div>
-      <div class="p"><svg class="chk"><use href="#chkd"/></svg>Athletic shoes in 2 to 4 weeks</div>
-    </div>
-
-    <div class="legend"><span><span class="dot"></span>Traditional surgery often means</span><span><svg class="chk"><use href="#chkd"/></svg>&nbsp;With Dr. Tagge and PRISM</span></div>
-    <div class="cards">
-      <div class="card"><div class="eyebrow">Before surgery</div><div class="ln t"><span class="dot"></span>Recovery dealt with after surgery</div><div class="ln p"><svg class="chk"><use href="#chkd"/></svg>Recovery planned before surgery day</div></div>
-      <div class="card"><div class="eyebrow">During surgery</div><div class="ln t"><span class="dot"></span>A larger incision to reach the bone</div><div class="ln p"><svg class="chk"><use href="#chkd"/></svg>Small incisions, under local anesthesia</div></div>
-      <div class="card"><div class="eyebrow">Left in the foot</div><div class="ln t"><span class="dot"></span>Screws or plates to hold the correction</div><div class="ln p"><svg class="chk"><use href="#chkd"/></svg>No screws or plates</div></div>
-      <div class="card"><div class="eyebrow">Leaving surgery</div><div class="ln t"><span class="dot"></span>Crutches or a knee scooter to get around</div><div class="ln p"><svg class="chk"><use href="#chkd"/></svg>Walk out the same day in a sandal</div></div>
-      <div class="card"><div class="eyebrow">The weeks after</div><div class="ln t"><span class="dot"></span>Weeks in a protective boot, on crutches</div><div class="ln p"><svg class="chk"><use href="#chkd"/></svg>Athletic shoes in 2 to 4 weeks</div></div>
+    <div class="two">
+      <div class="cardT"><h3>Traditional surgery often means</h3><ul>
+        <li><span class="dot"></span>Recovery dealt with after surgery</li>
+        <li><span class="dot"></span>A larger incision to reach the bone</li>
+        <li><span class="dot"></span>Screws or plates to hold the correction</li>
+        <li><span class="dot"></span>Crutches or a knee scooter to get around</li>
+        <li><span class="dot"></span>Weeks in a protective boot, on crutches</li></ul></div>
+      <div class="cardP"><h3>With Dr. Tagge and PRISM</h3><ul>
+        <li><svg class="chk"><use href="#chkd"/></svg>Recovery planned before surgery day</li>
+        <li><svg class="chk"><use href="#chkd"/></svg>Small incisions, under local anesthesia</li>
+        <li><svg class="chk"><use href="#chkd"/></svg>No screws or plates</li>
+        <li><svg class="chk"><use href="#chkd"/></svg>Walk out the same day in a sandal</li>
+        <li><svg class="chk"><use href="#chkd"/></svg>Athletic shoes in 2 to 4 weeks</li></ul></div>
     </div>
 
     <p class="note">These are typical results. Timeline varies.</p>
