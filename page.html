@@ -67,7 +67,15 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;min-h
 .sub{font-size:20px;max-width:560px;color:var(--ivory)}
 .proof{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin:28px 0 32px;max-width:560px;padding:0;list-style:none}
 .proof li{display:flex;gap:10px;font-size:16px;font-weight:500;line-height:1.4}
-.cap{font-size:14px;color:rgba(248,248,246,.8);margin-top:14px}
+.cap{font-size:14px;color:rgba(248,248,246,.75);margin-top:12px}
+.doc{display:flex;align-items:center;gap:18px;margin-top:30px;padding-top:26px;border-top:1px solid rgba(255,255,255,.1);max-width:560px}
+.avatar{flex:0 0 auto;width:72px;height:72px;border-radius:50%;border:2px solid var(--gold);background:linear-gradient(160deg,#4a4844,#2a2927);color:rgba(248,248,246,.5);font-size:11px;display:flex;align-items:center;justify-content:center}
+.doc p{margin:0;line-height:1.35}
+.dn{font-family:Figtree;font-weight:600;font-size:20px;color:var(--ivory)}
+.dr{font-size:16px;font-weight:600;color:var(--gold);margin-top:3px!important}
+.dc{font-size:15px;color:rgba(248,248,246,.75);margin-top:2px!important}
+.hero-ba .eyebrow{margin-bottom:12px}
+.pill.lt{background:var(--ivory);color:var(--charcoal)}
 
 /* comparison */
 .intro{max-width:760px;margin:0 auto 48px;text-align:center}
@@ -249,10 +257,21 @@ footer a{color:inherit}
         <a class="btn" id="heroBtn" href="#">See If You're a Candidate</a>
         <p class="call">Or call us at <a href="tel:+12243286466">(224) 328-6466</a></p>
       </div>
+      <div class="doc">
+        <div class="avatar">Photo</div>
+        <div>
+          <p class="dn">Dr. Michael Tagge, DPM</p>
+          <p class="dr">Top-rated, Chicago-based foot surgeon</p>
+        </div>
+      </div>
     </div>
-    <div>
-      <div class="ph ondark r45">Photo: Dr. Michael Tagge<br>(same photo as the live page's hero)</div>
-      <p class="cap">Dr. Michael Tagge, DPM · Foot surgeon, board-certified in podiatric medicine</p>
+    <div class="hero-ba">
+      <div class="eyebrow">Bunion</div>
+      <div class="ba">
+        <div class="ph ondark r34"><span class="pill lt">Before</span>Pair 1 · before<br>(live page photo)</div>
+        <div class="ph ondark r34"><span class="pill lt">After</span>Pair 1 · after<br>(live page photo)</div>
+      </div>
+      <p class="cap">Individual results vary.</p>
     </div>
   </div>
 </section>
@@ -311,23 +330,14 @@ footer a{color:inherit}
 <section class="beige">
   <div class="wrap">
     <h2 class="center">Before and after surgery with Dr. Tagge</h2>
-    <div class="pairs">
-      <div class="pair">
-        <div class="eyebrow tan">Bunion</div>
-        <div class="ba">
-          <div class="ph onlight r34"><span class="pill">Before</span>Live page photo</div>
-          <div class="ph onlight r34"><span class="pill">After</span>Live page photo</div>
-        </div>
+    <div class="pair mw840" style="margin-top:44px">
+      <div class="eyebrow tan">Bunion with hammertoes</div>
+      <div class="ba">
+        <div class="ph onlight r34"><span class="pill">Before</span>Live page photo</div>
+        <div class="ph onlight r34"><span class="pill">After</span>Live page photo</div>
       </div>
-      <div class="pair">
-        <div class="eyebrow tan">Bunion with hammertoes</div>
-        <div class="ba">
-          <div class="ph onlight r34"><span class="pill">Before</span>Live page photo</div>
-          <div class="ph onlight r34"><span class="pill">After</span>Live page photo</div>
-        </div>
-      </div>
+      <p class="small" style="margin-top:12px">Individual results vary.</p>
     </div>
-    <p class="small" style="margin-top:14px">Individual results vary.</p>
 
     <div class="qcard mw840" style="margin-top:44px">
       <q>“I went to Dr. Tagge for a second opinion on my bunion. I did not know there was a minimal invasive procedure. … I was back on my feet walking 2 miles, riding my bike and bowling …”</q>
