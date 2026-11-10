@@ -110,6 +110,22 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;min-h
 .paypanel .eyebrow{margin-bottom:10px}
 .paypanel p{font-size:18px;line-height:1.6;color:var(--charcoal)}
 
+/* what PRISM is */
+.prismsec .pq{max-width:820px;margin:0 auto 64px;text-align:center}
+.pqh{font-weight:600;font-size:clamp(26px,2.6vw,34px);line-height:1.3;margin-top:14px;letter-spacing:-.005em}
+.pqa{margin-top:16px;font-size:16px;font-weight:600;color:var(--goldtan)}
+.prism2{max-width:1000px;margin:0 auto;position:relative}
+.prismsec .bracket span{background:var(--beige)}
+.stages{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);column-gap:28px}
+.stage{background:var(--white);border-radius:16px;box-shadow:var(--shadow);padding:24px 24px 26px}
+.stage em{display:block;font-style:normal;font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--goldtan)}
+.stage b{display:block;font-size:15px;font-weight:600;margin-top:4px}
+.stage p{font-size:17px;line-height:1.5;margin-top:10px}
+.marker2{grid-column:1/4;grid-row:2;position:relative;height:64px}
+.marker2 i{position:absolute;left:calc(66.6667% + 4.67px);top:-28px;height:84px;border-left:2px dashed var(--goldtan)}
+.marker2 span{position:absolute;right:calc(33.3333% + 10px);top:26px;font-size:16px;font-weight:600;color:var(--goldtan);white-space:nowrap}
+.prismsec .paypanel{background:var(--white);margin-top:40px}
+
 /* PRISM graphic */
 .prism{max-width:860px;margin:64px auto 0}
 .bracket{position:relative;height:34px;margin:0 6px 14px;border:2px solid var(--gold);border-bottom:0;border-radius:10px 10px 0 0}
@@ -210,6 +226,18 @@ footer a{color:inherit}
   .note{text-align:center}
   .prism{margin-top:48px}
   .paypanel{margin-top:44px;padding:24px 22px}
+  .prismsec .pq{margin-bottom:40px}
+  .pqh{font-size:23px}
+  .prism2{padding-left:26px;margin-top:30px}
+  .prismsec .bracket{position:absolute;left:0;top:4px;bottom:4px;width:14px;height:auto;margin:0;border:2px solid var(--gold);border-right:0;border-radius:10px 0 0 10px}
+  .prismsec .bracket span{left:-4px;top:-26px;transform:none;padding:0 6px 0 0;font-size:14px}
+  .stages{grid-template-columns:1fr;row-gap:12px}
+  .s1{order:1} .s2{order:2} .marker2{order:3} .s3{order:4}
+  .stage{padding:20px 20px 22px}
+  .marker2{grid-column:auto;grid-row:auto;height:auto;display:flex;align-items:center;gap:10px;padding:4px 0}
+  .marker2 i{position:static;flex:1;height:0;border-left:0;border-top:2px dashed var(--goldtan)}
+  .marker2 span{position:static;font-size:15px}
+  .prismsec .paypanel{margin-top:40px}
   .cta-block .paynote{text-align:center}
   .boxes{grid-template-columns:1fr 14px 1fr 14px 1fr}
   .box{padding:14px 10px;border-radius:14px}
@@ -252,9 +280,9 @@ footer a{color:inherit}
 <section class="dark hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Minimally invasive · Chicago</div>
+      <div class="eyebrow">A different bunion recovery · Chicago</div>
       <h1>Bunion surgery doesn't have to disrupt your life.</h1>
-      <p class="sub">Dr. Michael Tagge corrects even severe bunions through small incisions using PRISM, a method he built around your recovery, so you're back on your feet without unnecessary downtime.</p>
+      <p class="sub">Dr. Michael Tagge corrects even severe bunions with PRISM, his method that combines minimally invasive surgery with a recovery planned around you, so you're back on your feet without unnecessary downtime.</p>
       <ul class="proof">
         <li><svg class="chk"><use href="#chk"/></svg>Walk out the same day</li>
         <li><svg class="chk"><use href="#chk"/></svg>No crutches</li>
@@ -289,7 +317,7 @@ footer a{color:inherit}
 <section>
   <div class="wrap">
     <div class="intro">
-      <h2>Dr. Tagge plans a different recovery from the one you've heard about.</h2>
+      <h2>Dr. Tagge plans a recovery unlike the one you've heard about.</h2>
       <p>Most people aren't afraid of bunion surgery itself. They're afraid of the recovery: the pain, the downtime, the scar, the stiff toe.</p>
     </div>
 
@@ -302,7 +330,7 @@ footer a{color:inherit}
         <li><span class="dot"></span>Weeks in a protective boot</li></ul></div>
       <div class="cardP"><h3>With Dr. Tagge and PRISM</h3><ul>
         <li><svg class="chk"><use href="#chkd"/></svg>Recovery planned before surgery day</li>
-        <li><svg class="chk"><use href="#chkd"/></svg>Small incisions, small scars</li>
+        <li><svg class="chk"><use href="#chkd"/></svg>Incisions smaller than a grain of rice</li>
         <li><svg class="chk"><use href="#chkd"/></svg>No screws or plates</li>
         <li><svg class="chk"><use href="#chkd"/></svg>Walk out the same day in a sandal</li>
         <li><svg class="chk"><use href="#chkd"/></svg>Supportive athletic shoes in 2 to 4 weeks</li>
@@ -310,23 +338,31 @@ footer a{color:inherit}
     </div>
 
     <p class="note">Individual results may vary.</p>
+  </div>
+</section>
 
-    <div class="prism" aria-label="PRISM covers the correction, your recovery and your life back">
+<!-- 3 WHAT PRISM IS -->
+<section class="beige prismsec">
+  <div class="wrap">
+    <div class="pq">
+      <div class="eyebrow tan">What PRISM is</div>
+      <h2 class="pqh">“Minimally invasive tells you how I get in. PRISM answers what I do before, during, and after I'm there.”</h2>
+      <p class="pqa">Dr. Michael Tagge</p>
+    </div>
+
+    <div class="prism2">
       <div class="bracket"><span>PRISM</span></div>
-      <div class="boxes">
-        <div class="box"><em>01</em><div>The correction</div></div>
-        <div></div>
-        <div class="box"><em>02</em><div>Your recovery</div></div>
-        <div></div>
-        <div class="box"><em>03</em><div>Your life back</div></div>
-        <div class="marker">Where most plans stop</div>
-        <div class="gapline"><i></i></div>
-      </div>
+      <ol class="stages">
+        <li class="stage s1"><em>01 · Root</em><b>Before surgery</b><p>He works out why the bunion formed and what you want to get back to, from long walks to tennis to the shoes you stopped wearing.</p></li>
+        <li class="stage s2"><em>02 · Fix</em><b>Surgery day</b><p>Your foot gets the correction it needs, shaped to stay stable as you walk.</p></li>
+        <li class="stage s3"><em>03 · Heal</em><b>The weeks after</b><p>A protective sandal guards the correction while you walk. You see Dr. Tagge every week at first, and he adjusts your plan as you go.</p></li>
+        <li class="marker2" aria-hidden="true"><i></i><span>Where most plans stop</span></li>
+      </ol>
     </div>
 
     <div class="paypanel">
       <div class="eyebrow tan">Built around your experience</div>
-      <p>Dr. Tagge built his care around the best experience and results for his patients, not around what insurance covers or around being the cheapest option. That's why Bunion Master is a private-pay practice, with one all-inclusive price for the surgery, the surgical center and planned recovery care. Financing available.</p>
+      <p>Dr. Tagge designed a different standard of care around the best experience and results for his patients, not around what insurance covers or around being the cheapest option. That's why Bunion Master is a private-pay practice, with one all-inclusive price for the surgery, the surgical center and planned recovery care. Financing available.</p>
     </div>
   </div>
 </section>
@@ -394,7 +430,6 @@ footer a{color:inherit}
     <div>
       <h2>Meet Dr. Michael Tagge</h2>
       <p>Dr. Tagge is board-certified by the American Board of Podiatric Medicine and certified in functional and regenerative medicine. He has treated hundreds of bunions, and his surgical practice focuses only on bunions and toes, all with minimally invasive surgery.</p>
-      <p>Along with the correction and your recovery plan, PRISM can include regenerative treatment, such as injections or laser therapy, and it's built to make the result last.</p>
       <p>He does every surgery himself, and you see him at every visit, from your first exam to your last check-up.</p>
       <p>Bunion Master is his private practice on N. Harlem Avenue in Chicago. Patients come from across the city, the North Shore and other states.</p>
       <div class="dq">
