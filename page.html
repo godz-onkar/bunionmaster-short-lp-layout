@@ -38,6 +38,7 @@ section{padding:92px 0}
 .call{margin-top:12px;font-size:16px;font-weight:500}
 .call a{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .dark .call{color:rgba(248,248,246,.85)}
+.paynote{margin-top:10px;font-size:15px;font-weight:500;line-height:1.45;color:rgba(248,248,246,.75)}
 .cta-block{display:flex;flex-direction:column;align-items:flex-start}
 .cta-block.mid{align-items:center}
 
@@ -103,6 +104,11 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;min-h
 .two li:first-child{border-top:0;padding-top:0}
 .two .dot{margin:8px 7px 0}
 .note{max-width:1000px;margin:18px auto 0;font-size:14px;color:#555;text-align:center}
+
+/* private-pay panel */
+.paypanel{max-width:760px;margin:56px auto 0;background:var(--beige);border-radius:22px;padding:32px 36px}
+.paypanel .eyebrow{margin-bottom:10px}
+.paypanel p{font-size:18px;line-height:1.6;color:var(--charcoal)}
 
 /* PRISM graphic */
 .prism{max-width:860px;margin:64px auto 0}
@@ -203,6 +209,8 @@ footer a{color:inherit}
   .intro{margin-bottom:32px} .intro p{font-size:18px}
   .note{text-align:center}
   .prism{margin-top:48px}
+  .paypanel{margin-top:44px;padding:24px 22px}
+  .cta-block .paynote{text-align:center}
   .boxes{grid-template-columns:1fr 14px 1fr 14px 1fr}
   .box{padding:14px 10px;border-radius:14px}
   .box div{font-size:15px}
@@ -256,6 +264,7 @@ footer a{color:inherit}
       <div class="cta-block">
         <a class="btn" id="heroBtn" href="#">See If You're a Candidate</a>
         <p class="call">Or call us at <a href="tel:+12243286466">(224) 328-6466</a></p>
+        <p class="paynote">Bunion Master is a private-pay practice. Financing available.</p>
       </div>
       <div class="doc">
         <div class="avatar">Photo</div>
@@ -281,25 +290,26 @@ footer a{color:inherit}
   <div class="wrap">
     <div class="intro">
       <h2>Dr. Tagge plans a different recovery from the one you've heard about.</h2>
-      <p>Most people aren't afraid of bunion surgery itself. They're afraid of the recovery.</p>
+      <p>Most people aren't afraid of bunion surgery itself. They're afraid of the recovery: the pain, the downtime, the scar, the stiff toe.</p>
     </div>
 
     <div class="two">
       <div class="cardT"><h3>Traditional surgery often means</h3><ul>
         <li><span class="dot"></span>Recovery dealt with after surgery</li>
-        <li><span class="dot"></span>A larger incision to reach the bone</li>
+        <li><span class="dot"></span>A larger incision, and a larger scar</li>
         <li><span class="dot"></span>Screws or plates to hold the correction</li>
         <li><span class="dot"></span>Crutches or a knee scooter to get around</li>
-        <li><span class="dot"></span>Weeks in a protective boot, on crutches</li></ul></div>
+        <li><span class="dot"></span>Weeks in a protective boot</li></ul></div>
       <div class="cardP"><h3>With Dr. Tagge and PRISM</h3><ul>
         <li><svg class="chk"><use href="#chkd"/></svg>Recovery planned before surgery day</li>
-        <li><svg class="chk"><use href="#chkd"/></svg>Small incisions, under local anesthesia</li>
+        <li><svg class="chk"><use href="#chkd"/></svg>Small incisions, small scars</li>
         <li><svg class="chk"><use href="#chkd"/></svg>No screws or plates</li>
         <li><svg class="chk"><use href="#chkd"/></svg>Walk out the same day in a sandal</li>
-        <li><svg class="chk"><use href="#chkd"/></svg>Athletic shoes in 2 to 4 weeks</li></ul></div>
+        <li><svg class="chk"><use href="#chkd"/></svg>Supportive athletic shoes in 2 to 4 weeks</li>
+        <li><svg class="chk"><use href="#chkd"/></svg>Regenerative treatment, depending on your plan</li></ul></div>
     </div>
 
-    <p class="note">These are typical results. Timeline varies.</p>
+    <p class="note">Individual results may vary.</p>
 
     <div class="prism" aria-label="PRISM covers the correction, your recovery and your life back">
       <div class="bracket"><span>PRISM</span></div>
@@ -312,6 +322,11 @@ footer a{color:inherit}
         <div class="marker">Where most plans stop</div>
         <div class="gapline"><i></i></div>
       </div>
+    </div>
+
+    <div class="paypanel">
+      <div class="eyebrow tan">About cost and insurance</div>
+      <p>Dr. Tagge built his care around the best experience and results for his patients, not around what insurance covers or around being the cheapest option. That's why Bunion Master is a private-pay practice, with one all-inclusive price for the surgery, the surgical center and planned recovery care. Financing available.</p>
     </div>
   </div>
 </section>
@@ -405,11 +420,11 @@ footer a{color:inherit}
     <div>
       <h3 style="margin-bottom:18px">Questions people ask before they decide</h3>
       <details><summary>Do you take insurance?<span class="pm"></span></summary><p>No, the practice doesn't bill insurance. Some patients file for out-of-network benefits themselves, and the practice can provide the paperwork. Coverage isn't guaranteed.</p></details>
-      <details><summary>What does it cost?<span class="pm"></span></summary><p>The cost depends on Dr. Tagge's plan for your foot. If surgery is right for you, you get one all-inclusive quote before you decide. It covers the surgery, the surgical center and your recovery care, including any regenerative treatments. You can pay over time with PatientFi financing.</p></details>
-      <details><summary>Is minimally invasive surgery as thorough as open surgery?<span class="pm"></span></summary><p>Yes, when it's done well. The openings are small, but Dr. Tagge makes the full correction your foot needs. He chooses the least disruptive approach that gets the job done. More surgery isn't automatically better surgery. And unlike many minimally invasive bunion surgeries, his surgeries don't leave screws or plates in your foot.</p></details>
+      <details><summary>What does it cost?<span class="pm"></span></summary><p>The cost depends on Dr. Tagge's plan for your foot. If surgery is right for you, you get one all-inclusive quote before you decide, and you can pay over time with PatientFi financing.</p></details>
+      <details><summary>Is minimally invasive surgery as thorough as open surgery?<span class="pm"></span></summary><p>Yes, when it's done well. The openings are small, but Dr. Tagge makes the full correction your foot needs. He chooses the least disruptive approach that gets the job done. More surgery isn't automatically better surgery. And his surgeries don't leave screws or plates in your foot.</p></details>
       <details><summary>Is my bunion too severe, or am I too old?<span class="pm"></span></summary><p>Not necessarily. Even significant bunions can often be corrected with minimally invasive surgery, and age alone doesn't rule you out. Dr. Tagge will tell you what's possible for your foot.</p></details>
-      <details><summary>When can I drive?<span class="pm"></span></summary><p>Most people can drive once they feel steady in a shoe Dr. Tagge approves, often within 2 to 3 days. Timelines vary.</p></details>
-      <details><summary>When can I get back to running, tennis or pickleball?<span class="pm"></span></summary><p>You're usually back in your own shoes in 4 to 6 weeks. When you can run or play depends on your foot and your sport, and Dr. Tagge plans that return with you.</p></details>
+      <details><summary>When can I drive?<span class="pm"></span></summary><p>Most people can drive once Dr. Tagge clears them and they feel steady, often within 2 to 3 days. Timelines vary.</p></details>
+      <details><summary>When can I get back to running, tennis or pickleball?<span class="pm"></span></summary><p>You're in a supportive athletic shoe in 2 to 4 weeks and back in your own shoes in 4 to 6 weeks. When you can run or play depends on your foot and your sport, and Dr. Tagge plans that return with you.</p></details>
       <details><summary>Will it hurt?<span class="pm"></span></summary><p>Expect some pain and swelling. Dr. Tagge plans your pain relief as part of your recovery.</p></details>
       <details><summary>Can my bunion come back?<span class="pm"></span></summary><p>It can, after any bunion surgery. Lowering the chance is part of your plan, and Dr. Tagge will go over your own risk at the consultation.</p></details>
     </div>
